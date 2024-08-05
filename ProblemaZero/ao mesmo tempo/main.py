@@ -12,8 +12,8 @@ def calcular_arctg(x, iteracoes):
 
 def calcular_erro(pi_aprox):
     erros = []
-    for pi_term in pi_aprox:
-        erro_i = abs(math.pi - pi_term)
+    for pi_i in pi_aprox:
+        erro_i = abs(math.pi - pi_i)
         erros.append(erro_i)
     return erros
 
