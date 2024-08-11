@@ -29,8 +29,8 @@ def main():
     pi_aproximado=calcular_piaprox(teta1, teta2)
     erros = calcular_erro(n, pi_aproximado)
 
-    # for i in range(n):
-    #     print(f"Iteração {i + 1}: pi aproximado = {pi_aproximado[i]}, erro = {erros[i]}")
+    for i in range(n):
+        print(f"Iteração {i + 1}: pi aproximado = {pi_aproximado[i]}, erro = {erros[i]}")
 
     plt.plot(range(n), erros, marker='o')
     plt.grid(True, which="both", linestyle='--', linewidth=0.5)
@@ -38,5 +38,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+    print(math.pi)
+    
 
 
